@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <style>
+        h1{
+            text-align: center;
+            font-family: syne;
+            font-weight: 800;
+            color: white;
+        }
         .comidas{
-            background-color: rgb(46, 147, 255);
             margin:12px;
             padding: 8px;
             border-radius: 6px;
-            font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: white;
-            font-weight: 200;
+            font-family: outfit;
+            color: black;
+            font-weight: 300;
+            border-left: 4px solid #3DDC97;
         }
         .farm-aura{
             border-radius: 5px;
@@ -25,15 +37,15 @@
         .linhas{
             height: 10px;
             color: rgb(0, 0, 0);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            
+            font-family: outfit;
+            font-weight: 300;
         }
         .colunas{
-            background-color: rgb(32, 178, 117);
-            border: 10px black;
+            background-color: #C084FC;
             height: 30px;
-            color: white;
-            font-family: Georgia, 'Times New Roman', Times, serif, Courier, monospace;
+            color: black;
+            font-family: syne;
+            font-weight: 600;
         }
         .tabela{
             margin-left: auto;
@@ -41,31 +53,43 @@
             width: 100%;
         }
         .legenda{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: 300;
+            font-family: syne;
+            font-weight: 600;
+            color: #C084FC
         }
-        .hr{
+        hr{
             background-color: black;
-            height: 1,9px;
+            height: 2px;
         }
         .titulo{
-            color: black;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 300;
+            color: #C084FC;
+            font-family: syne;
+            font-weight: 600;
         }
         .texto{
             color: black;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: outfit;
             font-weight: 300;
+        }
+        .corpo{
+            background-color: #F0F4F8;
+        }
+        .topo{
+            background-color: #3DDC97;
+            padding: 40px;
         }
     </style>
 </head>
-<body>
+<body class="corpo">
     <div>
         <header>
-            <h1 class="titulo">
+            <div class="topo">
+                <h1>AuraDog</h1>
+            </div>
+            <hr>
+            <h2 class="titulo">
                 Pratos populares:
-            </h1>
+            </h2>
             <p class="comidas">
                 Dogão simples
             </p>
