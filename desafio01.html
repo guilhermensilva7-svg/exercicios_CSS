@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1</title>
     <style>
         .comidas{
-            background-color: rgb(0, 107, 221);
+            background-color: rgb(46, 147, 255);
             margin:12px;
-            padding: 10px;
-            border-radius: 10px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 8px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: white;
+            font-weight: 200;
         }
         .farm-aura{
-            border-radius: 20px;
+            border-radius: 5px;
             height: 45%;
             width: 40%;
             display:block;
@@ -22,10 +23,17 @@
 
         }
         .linhas{
-            background-color: lightseagreen;
-            height: 50px;
-            color: white;
+            height: 10px;
+            color: rgb(0, 0, 0);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             
+        }
+        .colunas{
+            background-color: rgb(32, 178, 117);
+            border: 10px black;
+            height: 30px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif, Courier, monospace;
         }
         .tabela{
             margin-left: auto;
@@ -33,15 +41,30 @@
             width: 100%;
         }
         .legenda{
-            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+        }
+        .hr{
+            background-color: black;
+            height: 1,9px;
+        }
+        .titulo{
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+        }
+        .texto{
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
         }
     </style>
 </head>
 <body>
     <div>
         <header>
-            <h1>
-                Pratos populares
+            <h1 class="titulo">
+                Pratos populares:
             </h1>
             <p class="comidas">
                 Dogão simples
@@ -63,24 +86,25 @@
     <hr class="hr">
     <div>
         <img class="farm-aura" src="Imagens/Gemini_Generated_Image_68yfjl68yfjl68yf.png">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quisquam! Quia exercitationem repellendus iste incidunt quisquam molestias, corporis fuga harum eum asperiores expedita officia veritatis sapiente natus, qui ex labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quisquam! Quia exercitationem repellendus iste incidunt quisquam molestias, corporis fuga harum eum asperiores expedita officia veritatis sapiente natus, qui ex labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quisquam! Quia exercitationem repellendus iste incidunt quisquam molestias, corporis fuga harum eum asperiores expedita officia veritatis sapiente natus, qui ex labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quisquam! Quia exercitationem repellendus iste incidunt quisquam molestias, corporis fuga harum eum asperiores expedita officia veritatis sapiente natus, qui ex labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quisquam! Quia exercitationem repellendus iste incidunt quisquam molestias, corporis fuga harum eum asperiores expedita officia veritatis sapiente natus, qui ex labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quisquam! Quia exercitationem repellendus iste incidunt quisquam molestias, corporis fuga harum eum asperiores expedita officia veritatis sapiente natus, qui ex labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quisquam! Quia exercitationem repellendus iste incidunt quisquam molestias, corporis fuga harum eum asperiores expedita officia veritatis sapiente natus, qui ex labore!
+        <p class="texto">
+            Prepare-se para transcender o comum. Você está prestes a destravar o potencial oculto dentro de você. Cada mordida neste cachorro-quente não é apenas alimento; é um rito de passagem celestial. Abençoado pelas energias místicas das ruas, este dogão foi forjado para maximizar a sua presença no universo. Sinta o fluxo de +9999 Aura a cada mastigada. A aura flui onde a energia é nutrida. Cultive seu poder. Manifeste o seu destino. Farmar aura não é uma escolha, é um estilo de vida. O próximo nível da sua existência está a apenas uma mordida de distância. Coma para viver, viva para farmar a sua aura. 🌭✨🔥
         </p>
     </div>
+    <hr class="hr">
     <div>
         <h2 class="legenda">
-            Horários de Funcionamento
+            Horários de Funcionamento:
         </h2>
         <table class="tabela">
-            <tr class="linhas">
+            <tr>
                 <th class="colunas">
                     Dias da Semana
                 </th>
-                <th>
+                <th class="colunas">
                     Horário
                 </th>
             </tr>
-            <tr>
+            <tr class="linhas">
                 <td>
                     Segunda-feira a Quinta-feira
                 </td>
@@ -88,7 +112,7 @@
                     18:00 - 22:00
                 </td>
             </tr>
-            <tr>
+            <tr class="linhas">
                 <td>
                     Sexta-feira e Sábado
                 </td>
@@ -96,7 +120,7 @@
                     18:00 - 23:00
                 </td>
             </tr>
-            <tr>
+            <tr class="linhas">
                 <td>
                     Domingo
                 </td>
