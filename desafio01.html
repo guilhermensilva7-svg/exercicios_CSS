@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,84 +10,115 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
     <style>
-        h1{
+        h1 {
             text-align: center;
             font-family: syne;
             font-weight: 800;
             color: white;
         }
-        .comidas{
-            margin:10px;
+
+        .comidas {
+            margin: 20px;
             padding: 8px;
             border-radius: 6px;
             font-family: outfit;
             color: black;
             font-weight: 300;
-            border-left: #3DDC97 solid 4px;
-            width: fit-content;
+            border-left: #C084FC solid 4px;
+            width: 200px;
             box-shadow: rgba(0, 0, 0, 0.35) 1px 0px 4px;
         }
-        .farm-aura{
+
+        .farm-aura {
             border-radius: 5px;
             height: 45%;
             width: 40%;
-            display:block;
-            margin: 0 auto;
+            margin: 20px;
 
         }
-        .linhas{
+
+        .linhas {
             height: 10px;
             color: rgb(0, 0, 0);
             font-family: outfit;
             font-weight: 300;
+            border-radius: 6px;
+            background-color: rgba(160, 160, 160, 0.364);
         }
-        .colunas{
+
+        .colunas {
             background-color: #C084FC;
             height: 30px;
-            color: black;
             font-family: syne;
             font-weight: 600;
+            border-radius: 6px;
+            padding: 10px;
         }
-        .tabela{
+
+        .tabela {
             margin-left: auto;
             margin-right: auto;
             width: 100%;
         }
-        .legenda{
+
+        .legenda {
             font-family: syne;
             font-weight: 600;
-            color: #C084FC
+            color: #C084FC;
+            text-shadow: rgba(0, 0, 0, 0.35) 0px 0px 2px;
         }
-        hr{
-            background: linear-gradient(to right, #3DDC97, #C084FC);
+
+        hr {
+            background: linear-gradient(to right, transparent, #C084FC 50%, transparent);
             border: none;
             height: 2px;
+            margin: 10px;
         }
-        .titulo{
+
+        .titulo {
             color: #C084FC;
             font-family: syne;
             font-weight: 600;
             text-shadow: rgba(0, 0, 0, 0.35) 0px 0px 2px;
         }
-        .texto{
+
+        .texto {
             color: black;
             font-family: outfit;
             font-weight: 300;
+            width: fit-content;
         }
-        .corpo{
+
+        .corpo {
             background-color: #F0F4F8;
         }
-        .topo{
-            background-color: #3DDC97;
+
+        .topo {
+            background-color: #C084FC;
             padding: 20px;
             border-radius: 12px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
-            
+
+        }
+        .div_img{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 20px;
+        }
+        td{
+            padding: 10px;
+            border-radius: 6px;
+        }
+        th{
+            color: white;
         }
     </style>
 </head>
+
 <body class="corpo">
     <div>
         <header>
@@ -113,54 +145,59 @@
             </p>
         </header>
     </div>
-    <hr class="hr">
-    <div>
-        <img class="farm-aura" src="Imagens/Gemini_Generated_Image_68yfjl68yfjl68yf.png">
-        <p class="texto">
-            Prepare-se para transcender o comum. Você está prestes a destravar o potencial oculto dentro de você. Cada mordida neste cachorro-quente não é apenas alimento; é um rito de passagem celestial. Abençoado pelas energias místicas das ruas, este dogão foi forjado para maximizar a sua presença no universo. Sinta o fluxo de +9999 Aura a cada mastigada. A aura flui onde a energia é nutrida. Cultive seu poder. Manifeste o seu destino. Farmar aura não é uma escolha, é um estilo de vida. O próximo nível da sua existência está a apenas uma mordida de distância. Coma para viver, viva para farmar a sua aura. 🌭✨🔥
-        </p>
+    <hr>
+    <div class="div_img">
+            <img class="farm-aura" src="Imagens/Gemini_Generated_Image_68yfjl68yfjl68yf.png">
+            <p class="texto">
+                Prepare-se para transcender o comum. Você está prestes a destravar o potencial oculto dentro de você.
+                Cada mordida neste cachorro-quente não é apenas alimento; é um rito de passagem celestial. Abençoado
+                pelas energias místicas das ruas, este dogão foi forjado para maximizar a sua presença no universo.
+                Sinta o fluxo de +9999 Aura a cada mastigada. A aura flui onde a energia é nutrida. Cultive seu poder.
+                Manifeste o seu destino. Farmar aura não é uma escolha, é um estilo de vida. O próximo nível da sua
+                existência está a apenas uma mordida de distância. Coma para viver, viva para farmar a sua aura. 🌭✨🔥
+            </p>
     </div>
-    <hr class="hr">
-    <div>
-        <h2 class="legenda">
-            Horários de Funcionamento:
-        </h2>
-        <table class="tabela">
-            <tr>
-                <th class="colunas">
-                    Dias da Semana
-                </th>
-                <th class="colunas">
-                    Horário
-                </th>
-            </tr>
-            <tr class="linhas">
-                <td>
-                    Segunda-feira a Quinta-feira
-                </td>
-                <td>
-                    18:00 - 22:00
-                </td>
-            </tr>
-            <tr class="linhas">
-                <td>
-                    Sexta-feira e Sábado
-                </td>
-                <td>
-                    18:00 - 23:00
-                </td>
-            </tr>
-            <tr class="linhas">
-                <td>
-                    Domingo
-                </td>
-                <td>
-                    Fechado
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    
+    <hr>
+    <main>
+        <div>
+            <h2 class="legenda">
+                Horários de Funcionamento:
+            </h2>
+            <table class="tabela">
+                <tr>
+                    <th class="colunas">
+                        Dias da Semana
+                    </th>
+                    <th class="colunas">
+                        Horário
+                    </th>
+                </tr>
+                <tr class="linhas">
+                    <td>
+                        Segunda-feira a Quinta-feira
+                    </td>
+                    <td>
+                        18:00 - 22:00
+                    </td>
+                </tr>
+                <tr class="linhas">
+                    <td>
+                        Sexta-feira e Sábado
+                    </td>
+                    <td>
+                        18:00 - 23:00
+                    </td>
+                </tr>
+                <tr class="linhas">
+                    <td>
+                        Domingo
+                    </td>
+                    <td>
+                        Fechado
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
